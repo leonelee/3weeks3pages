@@ -112,6 +112,23 @@ body {
   display: none;
 }
 
+.nav-main li {
+  padding: 25px 25px;
+}
+
+.nav-button-title {
+  margin: 0;
+  text-align: left;
+}
+
+.nav-button-description {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.6rem;
+  text-align: left;
+}
+
 .foodsense-subscribe {
   border: silver 1px;
   border-style: dashed none;
@@ -242,10 +259,12 @@ body {
   .nav-main li {
     width: 25%;
     background-color: #f1f8f7;
-    text-align: center;
   }
   .nav-main li :active {
     background-color: #dfefec;
+  }
+  .nav-button-title {
+    text-align: center;
   }
   /* ===============foodsense-subscribe================ */
   .foodsense-subscribe {
@@ -332,6 +351,9 @@ body {
     width: 25%;
     background-color: #f1f8f7;
     text-align: center;
+  }
+  .nav-button-description {
+    display: block;
   }
   /* ===============foodsense-subscribe================ */
   .foodsense-subscribe {
