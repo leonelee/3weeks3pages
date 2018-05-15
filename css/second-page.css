@@ -90,6 +90,7 @@ body {
   line-height: 30px;
   font-size: 0.8rem;
   color: black;
+  background-color: white;
 }
 
 .slogan-description {
@@ -249,10 +250,30 @@ body {
     text-align: center;
   }
   /* ===============foodsense-publicity================= */
+  .foodsense-publicity-container {
+    position: relative;
+  }
+  .foodsense-publicity-container div {
+    position: absolute;
+    top: 60%;
+  }
+  .publicity-author {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #E5E5E5;
+    line-height: 100%;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .slogan {
+    width: 50%;
+  }
   .nav-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 0;
     padding: 0;
     width: 100%;
   }
@@ -265,6 +286,7 @@ body {
   }
   .nav-button-title {
     text-align: center;
+    font-size: 0.9rem;
   }
   /* ===============foodsense-subscribe================ */
   .foodsense-subscribe {
@@ -340,11 +362,31 @@ body {
     padding: 40px 0 0;
   }
   /* ===============foodsense-publicity================= */
+  .foodsense-publicity-container {
+    position: relative;
+  }
+  .foodsense-publicity-container div {
+    position: absolute;
+    top: 60%;
+  }
+  .publicity-author {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #E5E5E5;
+    line-height: 100%;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .slogan {
+    width: 50%;
+  }
   .nav-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+    margin-top: 0;
     width: 100%;
   }
   .nav-main li {
