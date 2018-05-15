@@ -1,3 +1,364 @@
-h1 {
-    color: red;
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #69aa98;
+}
+
+/* ================================ */
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  margin: 0;
+}
+
+/* ================ nav & logo ================ */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  order: 1;
+  width: 30%;
+  margin: 20px 0;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e4e4e4;
+  width: 100%;
+  font-size: 0.3rem;
+}
+
+.nav-button {
+  padding: 0 5px;
+  line-height: 40px;
+}
+
+.nav-button img {
+  display: none;
+}
+
+/* ================= main =============== */
+
+.main {
+  width: 100%;
+}
+
+/* ================= foodsense-publicity-main =============== */
+
+.foodsense-publicity-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.foodsense-publicity-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.foodsense-publicity-container img {
+  width: 100%;
+}
+
+.slogan {
+  margin: 0;
+  padding: 5px 0;
+  padding-left: 15px;
+  line-height: 30px;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.slogan-description {
+  margin: 0;
+  padding: 5px 0;
+  padding-left: 15px;
+  line-height: 30px;
+  font-size: 0.6rem;
+  color: white;
+  background-color: black;
+}
+
+.publicity-author {
+  line-height: 30px;
+  font-size: 0.1rem;
+  align-self: flex-end;
+}
+
+.nav-main {
+  display: none;
+}
+
+.foodsense-subscribe {
+  border: silver 1px;
+  border-style: dashed none;
+  padding: 20px 0;
+}
+
+.subscribe-description {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-description img {
+  margin-right: 10px;
+}
+
+.subscribe-description p {
+  font-size: 0.4rem;
+}
+
+/* ================ blogs ================ */
+
+.blogs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 30px 5%;
+}
+
+.blogs article {
+  margin: 10px 0;
+}
+
+.blogs h1 {
+  font-size: 0.9rem;
+}
+
+.blogs article img {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px silver;
+}
+
+.blog-more {
+  font-size: 0.8rem;
+}
+
+.blog-more span {
+  color: #a9a9a9;
+}
+
+/* =============== footer ================= */
+
+.footer {
+  padding: 15px 0 25px 0;
+  width: 100%;
+  border-top: 1px silver solid;
+  font-size: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  margin: 0;
+}
+
+.social-link li {
+  width: 35px;
+  height: 35px;
+}
+
+/* ================================ */
+
+@media (min-width: 577px) and (max-width: 1280px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 20%;
+    margin: 20px 0;
+  }
+  .nav {
+    order: 1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 0;
+    align-items: center;
+  }
+  .nav-button {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-button img {
+    display: inline;
+  }
+  .nav-button a {
+    width: 100%;
+    text-align: center;
+  }
+  /* ===============foodsense-publicity================= */
+  .nav-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+  .nav-main li {
+    width: 25%;
+    background-color: #f1f8f7;
+    text-align: center;
+  }
+  .nav-main li :active {
+    background-color: #dfefec;
+  }
+  /* ===============foodsense-subscribe================ */
+  .foodsense-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mail-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mail-subscribe input {
+    margin: 0 20px;
+  }
+  /* ===============blogs================ */
+  .blogs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+  }
+  .blogs article {
+    width: 23%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* ================================ */
+
+@media (min-width: 1281px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 0 0;
+    width: 20%;
+  }
+  .logo {
+    width: 80%;
+    margin: 0;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    order: 1;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .nav-button {
+    width: 100%;
+    line-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .nav-button img {
+    display: inline;
+  }
+  .nav-button a {
+    align-self: center;
+  }
+  .main {
+    width: 80%;
+    padding: 40px 0 0;
+  }
+  /* ===============foodsense-publicity================= */
+  .nav-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+  .nav-main li {
+    width: 25%;
+    background-color: #f1f8f7;
+    text-align: center;
+  }
+  /* ===============foodsense-subscribe================ */
+  .foodsense-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mail-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mail-subscribe input {
+    margin: 0 20px;
+  }
+  /* ===============blogs================ */
+  .blogs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+  }
+  .blogs article {
+    width: 23%;
+    margin: 0;
+    padding: 0;
+  }
 }
