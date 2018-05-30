@@ -1,3 +1,717 @@
-h1 {
-    color: red;
+* {
+  box-sizing: border-box;
+  margin: 0px;
 }
+
+/* ============================================= */
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-r-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.flex-r-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.flex-r-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-r-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-r-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-col-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-col-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-align-item-center {
+  align-items: center;
+}
+
+.flex-align-item-start {
+  align-items: flex-start;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ============================================= */
+
+header {
+  width: 100%;
+}
+
+.out-link-containter {
+  background: url("../images/week-3/top_bar.jpg");
+  width: 100%;
+}
+
+.out-link {
+  line-height: 40px;
+  width: 100%;
+  padding: 0;
+  max-width: 1140px;
+  color: white;
+}
+
+.contact {
+  margin-top: 0;
+  padding: 0;
+}
+
+.contact li {
+  padding: 0 10px;
+}
+
+.social-link li {
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.social-link li i {
+  background: transparent;
+  color: white;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 30px 0;
+  max-width: 1140px;
+}
+
+.logo {
+  line-height: 60px;
+}
+
+.logo h3 {
+  padding-left: 10px;
+}
+
+.nav {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #181818;
+}
+
+.nav li {
+  padding: 0 30px;
+}
+
+.nav li:last-child {
+  padding-right: 0px;
+}
+
+.home {
+  background: url("..\images\week-3\index.jpg") no-repeat 100%;
+  padding: 90px 0 100px 0;
+  width: 100%;
+  position: relative;
+}
+
+.home-content {
+  padding: 90px 0 100px 0;
+}
+
+.home-content>div {
+  margin: 30px 0;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  padding: 0 5%;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.join-with-us a {
+  color: white;
+  height: 46px;
+  line-height: 100%;
+}
+
+.event-container {
+  background-color: #f7f7f7;
+  padding: 0 55px;
+  height: 160px;
+  border-radius: 8px;
+  margin: 90px auto 0 auto;
+  max-width: 1140px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+}
+
+.countdown li {
+  padding: 10px 20px;
+}
+
+.countdown li div:first-child {
+  text-align: center;
+  font-weight: bold;
+}
+
+.countdown li div:last-child {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ============================================= */
+
+.button {
+  width: 160px;
+  text-align: center;
+  line-height: 46px;
+  vertical-align: middle;
+  background-color: #9f000a;
+  color: white;
+  border-radius: 4px;
+}
+
+.container {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0;
+}
+
+.container-padding {
+  padding: 90px 10% 100px 10%;
+  width: 100%;
+}
+
+.container-padding-w {
+  padding: 90px 75px 100px 75px;
+  width: 100%;
+}
+
+.section-title-container {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: 100;
+}
+
+/* ============================================= */
+
+.welcome-summary-row {
+  height: 360px;
+  width: 100%;
+}
+
+.welcome-summary-row img {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.text-summary {
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* ============================================= */
+
+.sermons {
+  background-color: #f5f5f5;
+}
+
+.sermon-list {
+  width: 100%;
+  padding: 0;
+}
+
+.sermon-list li {
+  width: 31%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.sermon-list li div {
+  padding: 44px 20px 50px 20px;
+}
+
+.sermon-list li img {
+  max-width: 100%;
+}
+
+.sermon-list li a {
+  font-size: 1.15rem;
+}
+
+.sermon-list li p {
+  font-size: 0.8rem;
+  font-style: oblique;
+}
+
+.sermon-list li p span {
+  color: #9f000a;
+}
+
+.sermon-item-link-list {
+  padding: 0;
+}
+
+.sermon-item-link-list li {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  padding: 0;
+}
+
+.sermon-item-link-list li:last-child {
+  margin-right: 0;
+}
+
+.sermon-item-link-list li a {
+  width: 48px;
+  height: 50px;
+  padding: 20px 16px;
+  color: #7c7c7c;
+}
+
+/* ============================================= */
+
+.sermons-2 {
+  max-width: 100%;
+  height: auto;
+  background-image: url(../images/week-3/mission.jpg);
+  padding: 90px 0 100px 0;
+}
+
+.sermons-2-list {
+  padding: 0;
+}
+
+.sermons-2-list li {
+  width: 25%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px silver solid;
+}
+
+.sermons-2-list li:last-child {
+  border-right: none;
+}
+
+.sermons-2-icon i {
+  font-size: 2rem;
+  color: #b10707;
+}
+
+.sermons-2-title {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: white;
+}
+
+.sermons-2-description {
+  font-size: 0.88rem;
+  margin-top: 20px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+/* ============================================= */
+
+.events-list {
+  width: 100%;
+  padding: 0;
+}
+
+.events-list li {
+  width: 33%;
+  padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.events-list img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.date {
+  width: 70px;
+  height: 70px;
+  background-color: #9f000a;
+}
+
+.date-day {
+  font-size: 2rem;
+  color: white;
+}
+
+.date-month {
+  font-size: 1rem;
+  color: white;
+}
+
+.event-content {
+  padding-left: 30px;
+}
+
+.event-content i {
+  color: #b10707;
+  padding-right: 10px;
+}
+
+.event-title {
+  font-size: 1.13rem;
+  font-weight: bold;
+}
+
+.event-duringtime,
+.event-location {
+  font-size: 0.75rem;
+  margin-top: 5px;
+  font-style: oblique;
+  color: #7c7c7c;
+}
+
+/* ============================================= */
+
+.donate {
+  width: 100%;
+  background-image: url(../images/week-3/donation.jpg);
+}
+
+.donate-container {
+  padding: 50px 0;
+}
+
+.donate-description {
+  width: 45%;
+  color: white;
+}
+
+.donate-description h1 {
+  font-size: 2.13rem;
+}
+
+.donate-description p {
+  font-size: 0.88rem;
+  font-style: oblique;
+  color: #b3b3b3;
+}
+
+.donate-description p:last-child {
+  font-style: normal;
+}
+
+.donate-description p span {
+  font-weight: bold;
+}
+
+.donate-description a {
+  color: white;
+}
+
+.donate-form {
+  width: 45%;
+  min-height: 340px;
+  padding: 40px 30px;
+  background-color: white;
+}
+
+.button-lg {
+  width: 100%;
+}
+
+/* ============================================= */
+
+.quote {
+  background-color: #f5f5f5;
+}
+
+.quote-container {
+  padding: 0 15%;
+  height: 380px;
+  background: url(../images/week-3/quote.png) no-repeat center;
+}
+
+.quote-content {
+  padding: 0 3%;
+}
+
+.quote-content h1 {
+  font-size: 1.6rem;
+  font-style: oblique;
+  font-weight: normal;
+  text-align: center;
+}
+
+.quote-content h4 {
+  margin-top: 15px;
+  font-size: 1.13rem;
+  color: #9f000a;
+}
+
+/* ============================================= */
+
+.latest-news {
+  background-color: #f5f5f5;
+}
+
+.latest-news-list {
+  padding: 0;
+  width: 100%;
+}
+
+.latest-news-list>li {
+  max-width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #c7c7c7;
+}
+
+.latest-news-list img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.latest-news-list div {
+  margin-bottom: 10px;
+  font-size: 1.13rem;
+  color: #181818;
+}
+
+.latest-news-list ul {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.latest-news-list ul li {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+
+.latest-news-list ul li span {
+  padding-left: 5px;
+  padding-right: 10px;
+  font-style: oblique;
+}
+
+.latest-news-list i {
+  color: #b10707;
+}
+
+/* ============================================= */
+
+.footer {
+  width: 100%;
+  background: url(../images/week-3/footer.jpg);
+  color: white;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.footer-container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0;
+}
+
+.footer i {
+  color: #b10707;
+}
+
+.contact-container {
+  padding: 40px 0;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.contact-col {
+  padding: 0 15px;
+  width: 33%;
+}
+
+.contact-col img {
+  margin-bottom: 25px;
+}
+
+.contact-logo-text {
+  font-size: 1.88rem;
+  margin-left: 10px;
+}
+
+.contact-col p {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-col i,
+.contact-col span {
+  line-height: 100%;
+}
+
+.contact-col p span {
+  margin-left: 10px;
+}
+
+.useful-links-col {
+  width: 33%;
+  padding: 0 70px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.useful-links-col h3 {
+  font-size: 1.13rem;
+  text-align: left;
+}
+
+.useful-links-col ul {
+  margin-top: 35px;
+  padding: 0;
+  height: 130px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.87rem;
+}
+
+.useful-links-col li {
+  margin-bottom: 10px;
+  width: 49%;
+  text-align: left;
+}
+
+.subscribe-col {
+  padding: 0 15px;
+  width: 33%;
+}
+
+.subscribe-col h3 {
+  font-size: 1.13rem;
+}
+
+.subscribe-col p {
+  margin-top: 35px;
+  font-size: 0.87rem;
+}
+
+.subscribe-col div {
+  margin-top: 35px;
+}
+
+.subscribe-col div input {
+  flex-basis: 100%;
+  padding-left: 15px;
+  line-height: 34px;
+  border: solid 1px rgba(235, 235, 235, 0.15);
+  background: transparent;
+}
+
+.button-sm {
+  line-height: 40px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background-color: white;
+  color: #9f000a;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.copyright-container {
+  height: 68px;
+  border-top: 1px solid silver;
+}
+
+.copyright-container i {
+  color: white;
+}
+
+.copyright {
+  height: 67px;
+}
+
+.copyright small {
+  height: 67px;
+  line-height: 67px;
+}
+
+.copyright small a {
+  color: #007bff;
+}
+
+.footer .social-link li {
+  margin-left: 20px;
+}
+
+/* ============================================= */
+
+@media (min-width: 577px) and (max-width: 1280px) {}
