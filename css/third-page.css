@@ -76,6 +76,54 @@ body {
 
 /* ============================================= */
 
+.button {
+  width: 160px;
+  text-align: center;
+  line-height: 46px;
+  vertical-align: middle;
+  background-color: #9f000a;
+  color: white;
+  border-radius: 4px;
+}
+
+.container {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0;
+}
+
+.container-padding {
+  padding: 90px 10% 100px 10%;
+  width: 100%;
+}
+
+.container-padding-w {
+  padding: 90px 75px 100px 75px;
+  width: 100%;
+}
+
+.section-title-container {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* ============================================= */
+
 header {
   width: 100%;
 }
@@ -83,6 +131,7 @@ header {
 .out-link-containter {
   background: url("../images/week-3/top_bar.jpg");
   width: 100%;
+  font-size: 0.8rem;
 }
 
 .out-link {
@@ -100,6 +149,10 @@ header {
 
 .contact li {
   padding: 0 10px;
+}
+
+.contact li div {
+  padding-left: 10px;
 }
 
 .social-link li {
@@ -127,7 +180,7 @@ header {
 }
 
 .nav {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #181818;
 }
@@ -151,7 +204,7 @@ header {
   padding: 90px 0 100px 0;
 }
 
-.home-content>div {
+.home-content > div {
   margin: 30px 0;
   text-align: center;
   color: white;
@@ -209,65 +262,24 @@ header {
 
 /* ============================================= */
 
-.button {
-  width: 160px;
-  text-align: center;
-  line-height: 46px;
-  vertical-align: middle;
-  background-color: #9f000a;
-  color: white;
-  border-radius: 4px;
-}
-
-.container {
-  margin-top: 90px;
-  margin-bottom: 100px;
-  max-width: 1140px;
-  width: 100%;
-  padding: 0;
-}
-
-.container-padding {
-  padding: 90px 10% 100px 10%;
-  width: 100%;
-}
-
-.container-padding-w {
-  padding: 90px 75px 100px 75px;
-  width: 100%;
-}
-
-.section-title-container {
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-.section-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-}
-
-.section-subtitle {
-  font-size: 1rem;
-  font-style: oblique;
-  font-weight: 100;
-}
-
-/* ============================================= */
-
 .welcome-summary-row {
-  height: 360px;
+  /* height: 360px; */
   width: 100%;
 }
 
 .welcome-summary-row img {
-  width: 50%;
+  max-width: 50%;
   padding-right: 20px;
 }
 
 .text-summary {
-  width: 50%;
+  max-width: 50%;
   padding-left: 20px;
+  line-height: 30px;
+}
+
+.text-summary p {
+  /* line-height: 30px; */
 }
 
 /* ============================================= */
@@ -282,7 +294,7 @@ header {
 }
 
 .sermon-list li {
-  width: 31%;
+  max-width: 31%;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -344,6 +356,7 @@ header {
 
 .sermons-2-list {
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .sermons-2-list li {
@@ -460,6 +473,7 @@ header {
   font-size: 0.88rem;
   font-style: oblique;
   color: #b3b3b3;
+  line-height: 30px;
 }
 
 .donate-description p:last-child {
@@ -522,9 +536,10 @@ header {
 .latest-news-list {
   padding: 0;
   width: 100%;
+  flex-wrap: wrap;
 }
 
-.latest-news-list>li {
+.latest-news-list > li {
   max-width: 31%;
   display: flex;
   flex-direction: column;
@@ -625,7 +640,7 @@ header {
 .useful-links-col {
   width: 33%;
   padding: 0 70px;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   text-align: center;
 }
 
@@ -637,7 +652,7 @@ header {
 .useful-links-col ul {
   margin-top: 35px;
   padding: 0;
-  height: 130px;
+  max-height: 130px;
   align-content: flex-start;
   flex-wrap: wrap;
   font-size: 0.87rem;
@@ -686,6 +701,7 @@ header {
 }
 
 .copyright-container {
+  max-height: 68px;
   height: 68px;
   border-top: 1px solid silver;
 }
@@ -694,16 +710,15 @@ header {
   color: white;
 }
 
+/* .copyright {
+  height: 67px;
+} */
+
 .copyright {
-  height: 67px;
+  line-height: 100%;
 }
 
-.copyright small {
-  height: 67px;
-  line-height: 67px;
-}
-
-.copyright small a {
+.copyright a {
   color: #007bff;
 }
 
@@ -713,4 +728,234 @@ header {
 
 /* ============================================= */
 
-@media (min-width: 577px) and (max-width: 1280px) {}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .sermons-2-list li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .out-link-containter {
+    display: none;
+  }
+  .sermons-2-list li {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .sermons-2-list li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* ============================================= */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .latest-news-list > li {
+    max-width: 49%;
+    padding: 0 2%;
+  }
+
+  .event-container {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  .latest-news-list {
+    justify-content: center;
+  }
+  .latest-news-list > li {
+    max-width: 90%;
+    padding: 0 2%;
+    margin-bottom: 40px;
+  }
+}
+
+/* ============================================= */
+
+@media (max-width: 991px) {
+  .container {
+    margin-bottom: 40px;
+  }
+
+  .container-padding {
+    padding-bottom: 40px;
+  }
+
+  .container-padding-w {
+    padding-bottom: 40px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .home {
+    margin-bottom: 510px;
+  }
+
+  .event-container {
+    bottom: -510px;
+    max-width: 90%;
+    height: 370px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .event-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .event-container .event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    margin: 40px 0;
+  }
+
+  .event-container .event-content > div {
+    text-align: center;
+  }
+
+  .countdown {
+    padding-left: 0;
+  }
+
+  .welcome {
+    padding: 10%;
+  }
+
+  .welcome-summary-row {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 690px;
+  }
+
+  .welcome-summary-row img {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .text-summary {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .text-summary p {
+    padding: 40px 0;
+  }
+
+  .sermon-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sermon-list li {
+    max-width: 690px;
+    margin-bottom: 30px;
+  }
+
+  .events-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .events-list li {
+    width: 100%;
+    max-width: 690px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .donate {
+  }
+
+  .donate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .donate-description,
+  .donate-form {
+    width: 100%;
+    max-width: 690px;
+  }
+
+  .donate-form {
+    margin-top: 40px;
+  }
+
+  .donate-description p {
+    margin-top: 10px;
+  }
+
+  .quote {
+    padding: 90px 2% 100px 2%;
+  }
+
+  .quote-container {
+    padding: 0;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-container {
+    padding: 0 5%;
+  }
+
+  .contact-container > div {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contact-col {
+    width: 100%;
+    margin-bottom: 70px;
+    padding-left: 70px;
+  }
+
+  .subscribe-col {
+    width: 100%;
+    padding-left: 70px;
+  }
+
+  .useful-links-col {
+    width: 100%;
+    boxmargin-bottom: 70px;
+  }
+
+  .useful-links-col ul {
+    max-height: 256px;
+  }
+
+  .copyright-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 120px;
+    height: 120px;
+  }
+
+  .copyright {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
