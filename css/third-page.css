@@ -829,6 +829,7 @@ header {
 
 @media (max-width: 991px) {
   .container {
+    margin-top: 30px;
     margin-bottom: 40px;
   }
 
@@ -849,11 +850,12 @@ header {
   }
 
   .home {
-    margin-bottom: 510px;
+    margin-bottom: 460px;
   }
 
+
   .event-container {
-    bottom: -510px;
+    bottom: -460px;
     max-width: 90%;
     height: 370px;
     padding: 40px 0;
@@ -933,9 +935,6 @@ header {
     margin-bottom: 30px;
   }
 
-  .donate {
-  }
-
   .donate-container {
     display: flex;
     flex-direction: column;
@@ -996,7 +995,7 @@ header {
 
   .useful-links-col {
     width: 100%;
-    boxmargin-bottom: 70px;
+    /* margin-bottom: 70px; */
   }
 
   .useful-links-col ul {
