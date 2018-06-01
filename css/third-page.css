@@ -234,6 +234,10 @@ header {
   color: #181818;
 }
 
+.nav-bar-icon {
+  display: none;
+}
+
 .nav li {
   padding: 0 20px;
 }
@@ -849,10 +853,13 @@ header {
     display: none;
   }
 
+  .nav-bar-icon {
+    display: inline-block;
+  }
+
   .home {
     margin-bottom: 460px;
   }
-
 
   .event-container {
     bottom: -460px;
