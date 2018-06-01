@@ -243,7 +243,7 @@ header {
 }
 
 .home {
-  background: url("..\images\week-3\index.jpg") no-repeat 100%;
+  background: url("../images/week-3/index.jpg") no-repeat 100%;
   padding: 90px 0 100px 0;
   width: 100%;
   position: relative;
